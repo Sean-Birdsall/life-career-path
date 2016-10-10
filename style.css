@@ -1,0 +1,294 @@
+html, body {
+
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: Verdana, sans-serif;
+	text-align: center;
+}
+
+.limit-width {
+	max-width: 1200px;
+	min-width: 320px;
+	margin: auto;
+	border-radius: 5px;
+}
+
+nav {
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	background-color: #739FD0;
+	height: 50px;
+	color: white;
+}
+
+nav h1 {
+	display: block;
+	font-size: 200%;
+	color: white;
+	margin: 5px;
+
+}
+
+header {
+	padding-top: 50px;
+}
+
+header img {
+
+	width: 15%;
+	border-radius: 50%;
+}
+
+main {
+
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0 , 0, 0.3), 0 6px 20px 0*/
+	/*rgba(0, 0, 0, 0.19), 0 -3px 20px 0 rgba(0, 0 , 0, 0.2);*/
+	background-color: #E1EAED;
+}
+
+main p {
+
+	margin-bottom: 10px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section {
+	padding: 10px;
+
+}
+
+a {
+
+	display: inline-block;
+	width: 90%;
+	min-width: 225px;
+	margin: auto;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 0 4px 8px 0 rgba(0, 0 , 0, 0.3), 0 6px 20px 0
+	rgba(0, 0, 0, 0.19);
+	margin-top: 15px;
+	background-color: white;
+	text-decoration: none;
+	color: black;
+
+}
+
+a img {
+
+	width: 50%;
+	float: left;
+	margin-right: 10px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+a p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+a h5 {
+	padding-left: 5px;
+	border-bottom: solid 1px #4E9A06;
+	display: table;
+	margin: auto;
+}
+
+section blockquote {
+
+	display: table;
+	font-size: 120%;
+	background-color: #739FD0;
+	font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+	font-weight: bold;
+	opacity: 0.7;
+	padding: 10px;
+	width: 50%;
+	border-radius: 15px;
+}
+
+.quote {
+	background-image: url("textures/office.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 90%;
+	height: 125px;
+	margin: auto;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0 , 0, 0.3), 0 6px 20px 0
+	rgba(0, 0, 0, 0.19);
+}
+
+.quote img {
+
+	width: 100%;
+}
+
+footer {
+
+	padding-top: 30px;
+	text-align: center;
+}
+
+h2, h3, h5, h6, p {
+
+	margin-top: 5px;
+	margin-bottom:10px;
+}
+
+h1 {
+
+	font-family: 'Cherry Cream Soda', cursive;
+	color: #4E9A06;
+}
+
+h3 {
+
+	color: #4E9A06;
+
+}
+
+h4 {
+
+	color: #739FD0;
+	font-family: 'Cherry Cream Soda', cursive;
+	margin: 0px 0px;
+	font-size: 140%;
+}
+
+h5 {
+	color: #739FD0;
+	font-family: 'Cherry Cream Soda', cursive;
+	font-size: 120%;
+
+}
+
+span {
+	font-weight: bold;
+	color: #4E9A06;
+}
+
+@media all and (max-width: 400px){
+
+	a {
+		border-radius: 5px;
+		text-decoration: none;
+		color: black;
+	}
+
+	a img {
+	width: 25%;
+	border-top-right-radius: 0;
+	}
+
+	a h5 {
+
+		border-radius: 5px 5px 0 0;
+		margin-top: 5px;
+		margin-right: 10px;
+		font-size: 200%;
+		border-bottom: solid 1px #4E9A06;
+		display: table;
+
+	}
+
+	a p {
+		clear:left;
+	}
+
+	section blockquote {
+		width: 70%;
+	}
+}
+
+@media all and (min-width: 598px){
+	a {
+	    width: 26%;
+	    margin: 15px 10px;
+	    text-decoration: none;
+		color: black;
+	}
+
+	a img {
+	    float: none;
+	    width: 100%;
+
+	}
+
+	.bottom-article {
+		width: 60%;
+
+	}
+
+		.bottom-article img {
+			width: 50%;
+			float: left;
+			margin-right: 10px;
+			min-width: 170px;
+		}
+
+		.bottom-article h5 {
+			display: inline;
+			position: relative;
+			top: 15px;
+		}
+
+		.bottom-article p {
+			margin-top: 25px;
+		}
+
+	.quote {
+		height: 125px;
+		width: 90%;
+	}
+
+	section blockquote {
+
+	display: table;
+	font-size: 120%;
+	background-color: #739FD0;
+	font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+	font-weight: bold;
+	opacity: 0.7;
+	box-sizing: border-box;
+	padding: 5px;
+	width: 90%;
+	border-radius: 15px;
+}
+}
+
+@media all and (min-width: 779px){
+	.bottom-article {
+		width: 26%;
+
+	}
+
+		.bottom-article img {
+			width: 100%;
+			float: left;
+			margin-right: 10px;
+			min-width: 170px;
+		}
+
+		.bottom-article h5 {
+			display: inline-block;
+			position: inherit;
+			margin: 0;
+		}
+
+		.bottom-article p {
+			margin-top: 5px;
+		}
+
+	section blockquote {
+		font-size: 150%;
+	}
+
+}
