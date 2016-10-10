@@ -11,6 +11,15 @@ angular.module('lifeCareerPath', ['ngRoute'])
         .when('/', {
                 templateUrl: '/templates/home.html'
             })
+        .when('/dash', {
+                templateUrl: '/templates/dash.html'
+            })
+        .when('/path', {
+                templateUrl: '/templates/path.html'
+        })
+        .when('/manage', {
+                templateUrl: '/templates/manage.html'
+        })
         .otherwise({
               redirectTo: '/'
           })

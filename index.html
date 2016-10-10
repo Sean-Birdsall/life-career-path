@@ -2,64 +2,27 @@
 <html ng-app="lifeCareerPath">
 <head>
 	<title>Life Career Path</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Cherry+Cream+Soda" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body ng-controller="mainController as main">
 	<nav>
-		<h1>Life Career Path</h1>
+		<a href="#/"><h1>Life Career Path</h1></a>
 	</nav>
 	<header class="limit-width">
 		<h4>Your Personal Career Management Application</h4>
 	</header>
-	<main class="limit-width">
-		<section>
-			<h3>Welcome to Your Life Career Path</h3>
-			<p>
-				This is your personal career management application.
-				Think of it like your own personal career counselor
-				you can go to when you need some guidance and direction
-				in various career-related situations such as choosing
-				your training/education, finding a job, getting a promotion,
-				and managing a job/career change.
-			</p>
-			<h3>Click on one of the button areas below to get started.</h3>
-		</section>
-		<section class="container">
-			<a href="#/path.html">
-				<img src="textures/choosepath.jpg">
-				<h5>Choose Your Path</h5>
-				<p>
-					The information & resources available to you here
-					will help you to discover, choose, and manage the
-					career path that is right for you.
-				</p>
-			</a>
-			<a href="#/dash.html">
-				<img src="textures/dash.png">
-				<h5>Career Dashboard</h5>
-				<p>
-					Access to your career dashboard to find useful information about your career from
-					high school to retirement. Use general information from other users to find out
-					what really is going on in your industry.
-				</p>
-			</a>
-			<a href="#/manage.html" class="bottom-article">
-				<img src="textures/stress.jpg">
-				<h5>Manage Stress</h5>
-				<p>
-					Reduce stress and save time when managing your
-					career related activities by using the helpful
-					tools provided here. Personality test, Attribute test, ...
-				</p>
-			</a>
-		<section>
-	</main>
+	<ng-view>
+
+  </ng-view>
 	<footer class="limit-width">
-		<address>Created By Sean Birdsall | Last updated: 9/23/2016</address>
+    <h3>Click the Heading on the Top to Return to the Home Page</h3>
+		<address>Created By Sean Birdsall | Copyright 2016</address>
 	</footer>
-	<script type="text/javascript" src="main.js"></script>
+
 </body>
 </html>

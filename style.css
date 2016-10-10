@@ -22,7 +22,9 @@ nav {
 	height: 50px;
 	color: white;
 }
-
+nav a {
+  text-decoration: none;
+}
 nav h1 {
 	display: block;
 	font-size: 200%;
@@ -42,9 +44,6 @@ header img {
 }
 
 main {
-
-	/*box-shadow: 0 4px 8px 0 rgba(0, 0 , 0, 0.3), 0 6px 20px 0*/
-	/*rgba(0, 0, 0, 0.19), 0 -3px 20px 0 rgba(0, 0 , 0, 0.2);*/
 	background-color: #E1EAED;
 }
 
@@ -61,7 +60,7 @@ section {
 
 }
 
-a {
+main a {
 
 	display: inline-block;
 	width: 90%;
@@ -209,7 +208,7 @@ span {
 }
 
 @media all and (min-width: 598px){
-	a {
+	main a {
 	    width: 26%;
 	    margin: 15px 10px;
 	    text-decoration: none;
