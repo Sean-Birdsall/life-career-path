@@ -17,12 +17,16 @@
 		</blockquote>
 </section>
 <section>
-		<h3>Your information is protected</h3>
-		<p>
-			Share as much career and education information as you want
-			with Life Career Path knowing that it is safe and protected. Other
-			users will not be able to see your personal data. The application
-			uses broad/general data from users to give the community greater insights
-			into certain industries.
-		</p>
+		<h3>Log-in</h3>
+		<form action="http://127.0.0.1:3000/log-in" method="GET">
+			<label for="username">Username: <input type="text" name="username"></label>
+			<label for="username">Password: <input type="password" name="password"></label>
+			<input type="submit">
+		</form>
+		<h3>Sign-up</h3>
+		<form action="http://127.0.0.1:3000/sign-up" method="POST">
+			<label for="username">Username: <input type="text" name="username"></label>
+			<label for="username">Password: <input type="password" name="password"></label>
+			<input type="submit">
+		</form>
 </section>
